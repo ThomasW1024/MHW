@@ -1,0 +1,7 @@
+{ 
+    "jewel":[
+        {"name":"Fortitude Jewel","rarity":5, "slot":1 },
+        {"name":"Flight Jewel","rarity":5, "slot":2 },
+        {"name":"Heavy Artillery Jewl","rarity":5, "slot":1 }
+    ]
+}
