@@ -25,13 +25,15 @@ loadJSON(function(response) {
     // Assuming json data is wrapped in square brackets as Drew suggests
     //console.log(jsonresponse[0].name);
     jewel_list = JSON.parse(response);
-    for( var i in jewel_list.jewel){
-        var parent = document.getElementById("myDisplay");
-        parent.appendChild(document.createElement('div'));
-        parent.lastChild.innerHTML =
-            jewel_list.jewel[i].name + " "+ 
-            jewel_list.jewel[i].rarity + " " +
-            jewel_list.jewel[i].slot ;
+    jewel_list.jewel.forEach(
+        function(item){
+            var parent = document.getElementById("myDisplay");
+            parent.appendChild(document.createElement('div'));
+            parent.lastChild.innerHTML =
+                item.name + " "+ 
+                item.rarity + " " +
+                item.slot ;
         
-    }
+        }
+    )
 });
