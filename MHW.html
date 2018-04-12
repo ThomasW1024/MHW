@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="loadJSON.js"></script>
-        
+    <head>        
         <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
@@ -14,7 +12,13 @@
 
           <!-- Modal content -->
           <div class="modal-content">
-            <span class="modal-close">&times;</span>
+            <span id="modalClose", class="modal-close">&times;</span>
+            <div id="filter" >
+                <input type="radio" value="R5" name="filterRarity">Rarity 5</input>
+                <input type="radio" value="R6" name="filterRarity">Rarity 6</input>
+                <input type="radio" value="R7" name="filterRarity">Rarity 7</input>
+                <input type="radio" value="R8" name="filterRarity">Rarity 8</input>
+            </div>
             <p>Some text in the Modal..</p>
           </div>
 
@@ -23,5 +27,7 @@
         </div>
         
     </body>
+    <script src="loadJSON.js"></script>
     <script type="application/javascript" src="modal.js"></script>
+    <script type="application/javascript" src="filter.js"></script>
 </html>

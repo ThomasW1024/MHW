@@ -5,11 +5,12 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("myAdd");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("modal-close");
+var span = document.getElementById("modalClose");
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
+    console.log(myList.jewel.length);
 }
 
 // When the user clicks on <span> (x), close the modal

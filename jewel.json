@@ -1,7 +1,44 @@
 { 
     "jewel":[
-        {"name":"Fortitude Jewel","rarity":5, "slot":1 },
-        {"name":"Flight Jewel","rarity":5, "slot":2 },
-        {"name":"Heavy Artillery Jewl","rarity":5, "slot":1 }
+        {"name":"Fortitude","rarity":5, "slot":1, "color":"Red" },
+        {"name":"Flight","rarity":5, "slot":2, "color":"Red" },
+        {"name":"Heavy Artillery","rarity":5, "slot":1, "color":"Red" },
+        {"name":"Protection","rarity":5, "slot":1, "color":"Blue" },
+        {"name":"Crisis","rarity":5, "slot":1, "color":"Blue" },
+        {"name":"Satiated","rarity":5, "slot":1, "color":"Blue" },
+        {"name":"Smoke","rarity":5, "slot":1, "color":"Green" },
+        {"name":"Intimidator","rarity":5, "slot":1, "color":"Green" },
+        {"name":"Meowster","rarity":5, "slot":1, "color":"green" },
+        
+        {"name":"Steadfast","rarity":6, "slot":1, "color":"Red" },
+        {"name":"Footing","rarity":6, "slot":2, "color":"Red" },
+        {"name":"Brace","rarity":6, "slot":3, "color":"Red" },
+        {"name":"Wind Resist","rarity":6, "slot":2, "color":"Blue" },
+        {"name":"Earplug","rarity":6, "slot":3, "color":"Blue" },
+        {"name":"Defence","rarity":6, "slot":1, "color":"Blue" },
+        {"name":"Vitality","rarity":6, "slot":2, "color":"Green" },
+        {"name":"Physique","rarity":6, "slot":1, "color":"Green" },
+        {"name":"Medicine","rarity":6, "slot":2, "color":"green" },
+
+        {"name":"Blast","rarity":7, "slot":1, "color":"Red" },
+        {"name":"Paralyzer","rarity":7, "slot":1, "color":"Red" },
+        {"name":"Rep","rarity":7, "slot":1, "color":"Red" },
+        {"name":"Dragon Seal","rarity":7, "slot":2, "color":"Blue" },
+        {"name":"Attack","rarity":7, "slot":1, "color":"Blue" },
+        {"name":"Furor","rarity":7, "slot":3, "color":"Blue" },
+        {"name":"Enhancer","rarity":7, "slot":2, "color":"Green" },
+        {"name":"Mighty","rarity":7, "slot":2, "color":"Green" },
+        {"name":"Potential","rarity":7, "slot":2, "color":"green" },
+        
+        {"name":"Spread","rarity":8, "slot":2, "color":"Red" },
+        {"name":"Mighty Bow","rarity":8, "slot":2, "color":"Red" },
+        {"name":"Pierce","rarity":8, "slot":2, "color":"Red" },
+        {"name":"Artillery","rarity":8, "slot":2, "color":"Blue" },
+        {"name":"Mind's Eye","rarity":8, "slot":3, "color":"Blue" },
+        {"name":"Critical","rarity":8, "slot":3, "color":"Blue" },
+        {"name":"Charger","rarity":8, "slot":3, "color":"Green" },
+        {"name":"Draw","rarity":8, "slot":2, "color":"Green" },
+        {"name":"Release","rarity":8, "slot":2, "color":"green" }
+
     ]
 }
