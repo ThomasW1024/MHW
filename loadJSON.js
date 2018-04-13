@@ -72,7 +72,6 @@ function loadJson(fileName){
 loadJson('jewel.json').then(
     function(result) {
         myList = JSON.parse(result);
-        console.log(myList.jewel.length);
     }, function(err) {
         console.log(err); // Error: "It broke"
     }

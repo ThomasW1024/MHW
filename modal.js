@@ -10,9 +10,7 @@ var span = document.getElementById("modalClose");
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
-    console.log(myList.jewel.length);
     var wrapper = document.getElementById("newTuple");
-    console.log(wrapper.childElementCount);
     createForm(wrapper);    
     
 }
@@ -59,14 +57,7 @@ function createJewelPlaceHolder(i, parentElement){
     item.innerHTML = "empty";
     
     item.onclick = function (){
-        console.log(i);
-        if(i > USER_CHOICE.length){
-        }else if (i == USER_CHOICE.length){
-            USER_CHOICE.pop();
-        }else{
-            USER_CHOICE.splice((i.valueOf()-1), 1);
-        }
-        DrawUserChoice();
+        jewelRemove(i);
     }
     return item;
 }

@@ -1,22 +1,18 @@
 var flagR = document.getElementsByName("filterRarity");
 
 flagR[0].onchange = function(){
-    console.log("Rarity 5 selected");
     displayJewels(document.getElementById("jewels"), filter(5));
 };
 
 flagR[1].onchange = function(){
-    console.log("Rarity 6 selected");
     displayJewels(document.getElementById("jewels"), filter(6));
 };
 
 flagR[2].onchange = function(){
-    console.log("Rarity 7 selected");
     displayJewels(document.getElementById("jewels"), filter(7));
 };
 
 flagR[3].onchange = function(){
-    console.log("Rarity 8 selected");
     displayJewels(document.getElementById("jewels"), filter(8));
 };
 

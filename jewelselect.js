@@ -8,9 +8,12 @@ function jewelSelect(id){
             return item.icon == id;
         })
     );
-    
     //display
     DrawUserChoice();
+    if (USER_CHOICE.length == 3){
+        createSubmitButton();
+    }
+
 }
 function checkEmpty(jewelPlaceHolder){
     return jewelPlaceHolder.innerHTML == "empty"; 
@@ -33,11 +36,33 @@ function displayJewel(holder, holderIndex){
     holder.innerHTML = USER_CHOICE[holderIndex].icon;
 }
 
-function jewelRemove(){
-    
+function jewelRemove(i){
+    if(i > USER_CHOICE.length){
+    }else if (i == USER_CHOICE.length){
+        USER_CHOICE.pop();
+    }else{
+        USER_CHOICE.splice((i.valueOf()-1), 1);
+    }
+    DrawUserChoice();
+    removeSubmitButton();
 }
 function removeUSERChoice(){
     USER_CHOICE = [];
 }
 
+function createSubmitButton(){
+    var submitButton = document.createElement("button");
+        submitButton.setAttribute("id", "handIN");
+        submitButton.onclick = function(){
+            //TODO add cookie action;
+        };
+        submitButton.innerHTML = "save";
+    document.getElementById("newTuple").appendChild(submitButton);
+}
 
+function removeSubmitButton(){
+    var submitButton = document.getElementById("handIN");
+    if( submitButton != undefined){
+        submitButton.parentElement.removeChild(submitButton);
+    }
+}
