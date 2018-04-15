@@ -33,7 +33,15 @@ function DrawUserChoice(){
 
 function displayJewel(holder, jwl){
     //TODO update Draw method
-    holder.innerHTML = jwl.icon;
+    var elem = document.createElement("img");
+    
+    elem.setAttribute("src", "Jewel_Icon/jpg/" + jwl.icon + ".jpg");
+    elem.setAttribute("height", "64");
+    elem.setAttribute("width", "64");
+    
+    holder.appendChild(elem);
+
+    //holder.innerHTML = jwl.icon;
 }
 
 function jewelRemove(i){
