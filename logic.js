@@ -1,8 +1,3 @@
-var static_sequence = [1,1,2];
-var sequence_index_pointer = 0;
-var tuple_list = [];
-var tuple_index_pointer = 0;
-
 function passMission(){
     var count = static_sequence[sequence_index_pointer].valueOf;
     for(;count > 0;count--){
@@ -17,6 +12,7 @@ function DoJewelRefining(){
 
 function setSequencePointer(i){
     sequence_index_pointer = i;
+    setCookie("sequence_index_pointer", sequence_index_pointer, 4000);
 }
 
 function incrementSequencePointer(){
@@ -25,10 +21,12 @@ function incrementSequencePointer(){
     }else{
         sequence_index_pointer++;
     }
+    setCookie("sequence_index_pointer", sequence_index_pointer, 4000);
 }
 
 function incrementTuplePointer(){
     if(tuple_index_pointer < tuple_list.length){
         tuple_index_pointer++;
     }
+    setCookie("tuple_index_pointer", tuple_index_pointer, 4000);
 }

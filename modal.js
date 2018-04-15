@@ -41,7 +41,6 @@ function removeForm(){
     while(wrapper.childElementCount != 0){
         wrapper.removeChild(wrapper.lastChild);
     }
-    console.log(wrapper.childElementCount);
 }
 
 function createForm(parentElement){
