@@ -20,6 +20,11 @@
 //        myList = JSON.parse(response);
 //    });
 //}
+
+/**
+ *  function load json file
+ *  @param fileName name of file with path
+ */
 function loadJson(fileName){
     return new Promise(
         function(resolve, reject){

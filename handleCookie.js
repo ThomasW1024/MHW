@@ -1,3 +1,9 @@
+/**
+ *  function that set cookie into HTML Document
+ *  @param cName cookie name
+ *  @param cValue value of cookie
+ *  @param exDay expiry date need to set
+ */
 function setCookie(cName, cValue, exDay) {
     var d = new Date();
     d.setTime(d.getTime() + (exDay* 24 * 60 * 60 * 1000));
@@ -5,7 +11,10 @@ function setCookie(cName, cValue, exDay) {
     document.cookie = cName + "=" + cValue + ";" + expires + ";path=/";
     
 }
-
+/**
+ *  function that get cookie from HTML Document
+ *  @param cName cookie name
+ */
 function getCookie(cName) {
     var name = cName + "=";
     var ca = document.cookie.split(';');

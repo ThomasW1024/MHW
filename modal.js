@@ -27,32 +27,44 @@ window.onclick = function(event) {
     }
 }
 
-
-
+/**
+ *  function remove all element contain in Modal 
+ *  @relation HTML Display
+ */
 function closeModalWrapper(){
     modal.style.display = "none";
     uncheckAll();
     removeForm();
     removeUSERChoice();
 }
-
+/**
+ *  function that remove place holder for User Chocie display on HTML
+ *  @relation HTML Display
+ */
 function removeForm(){
     var wrapper = document.getElementById("newTuple");
     while(wrapper.childElementCount != 0){
         wrapper.removeChild(wrapper.lastChild);
     }
 }
-
+/**
+ *  function that create tuple display area for User Choice display on HTML
+ *  @relation HTML Display
+ */
 function createForm(parentElement){
-    for(var i = 1; i <=3 ; i++){
+    for(var i = 0; i <3 ; i++){
         parentElement.appendChild(createJewelPlaceHolder(i, parentElement));
     }
 }
 
+/**
+ *  function that create place holder for User Choice display on HTML
+ *  @relation HTML Display
+ */
 function createJewelPlaceHolder(i, parentElement){
     var item = document.createElement("div");
     item.setAttribute("class", "new-jewel");
-    //item.setAttribute("onclick", "jewelRemove()");
+    //TODO
     item.innerHTML = "empty";
     
     item.onclick = function (){
